@@ -27,30 +27,28 @@ h5 {
     opacity: 0.9;}
 body {
     background-color: black;
+    margin: 0px;
 }
 
 /* Nav bar */
 
 .nav {
-    height: 69px;
-    border-bottom: 1px solid seashell;
-    background-color: black;
-    display: inline-flex;
+display: inline-flex;
+    align-items: center;
     justify-content: space-between;
-    margin: 0px;
+    width: 100%;
+    height: 69px;
+    background-color: black;
+    border-bottom: 1px solid seashell;
+    position: fixed;
+    z-index: 1;
     padding-left: 10px;
     padding-right: 10px;
-position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  width: 100%;
-       flex-wrap: wrap;
-    align-items: center;
 }
 .nav ul
 {
     align-content: flex-end;
+    padding-right: 20px;
 }
 .nav li {
     display: inline-block;
@@ -69,30 +67,129 @@ position: fixed;
 /* Header Section */
 
 .header {
-  display: inline-flex;
+display: flex;
+    margin: auto;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-        height: 700px;
+    flex-direction: column;
     width: 1200px;
-}
-.bgimg {
     height: 700px;
-    width: 1200px;
-   position: relative;
-    z-index: -1;
-    left:
+        background-image:url("../img-mission-background.jpg");
 }
 
 .namebar {
     background-color: black;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    text-align: center;
+    justify-content: center;
     width: 1200px;
+    display: block;
+}
+
+.teaofthemonth{
+    text-align: center;
+}
+
+.maincontent {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+width: 1000px;
+color: white;
+font-family: Helvetica;
+text-align: center;
+justify-content: space-between;
+margin: auto;
+}
+.myrtle {
+margin-left: 170px;
+margin-bottom: bottom: 10px;
+}
+.bedford {
+margin-right: 170px;
+}
+
+.maincontent h4{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.Downtown  {
+  width: 300px;
+  height: 250px;
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  font-family: Helvetica;
+  color: seashell;
+  background-color: black;
+  text-align: center;
+    align-items: stretch;
+        line-height: 2;
+}
+.EastBayside {
+  width: 300px;
+  height: 250px;
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  font-family: Helvetica;
+  color: seashell;
+  background-color: black;
+  text-align: center;
+    line-height: 2;
+}
+.Oakdale {
+  width: 300px;
+  height: 250px;
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+    align-items: stretch;
+  flex-direction: column;
+  align-content: stretch;
+  font-family: Helvetica;
+  color: seashell;
+  background-color: black;
+  text-align: center;
+        line-height: 2;
+}
+.Location {
+  display: flex;
+  width: 1000px;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+    margin-bottom: auto;
 
 }
 
+.LocationContainer {
+  display: flex;
+    flex-direction: column;
+  width: 1200px;
+  height: 500px;
+align-items: center;
+    margin: auto;
+    opacity: 1;
+          background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg');
+      justify-content: center;
+  align-content: center;
+}
 
+.LocationContainer h2 {
+ margin-bottom: 0;
+    margin-top: auto;
+
+}
+
+.footer{
+    text-align: center;
+}
+
+.copyright {
+        margin-left: 10px;
 }
